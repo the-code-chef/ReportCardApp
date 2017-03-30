@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ReportCard</string>
+    <string name="school_name">Delhi Public School</string>
+    <string name="report_card">Report Card</string>
+    <string name="student_name">Deepanshu Sinha</string>
 </resources>

@@ -7,14 +7,59 @@
     android:orientation="vertical"
     tools:context="com.example.deepanshu.reportcard.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_250">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_250"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:orientation="vertical">
+
+            <com.example.deepanshu.reportcard.TextView_Lato
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_32"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/report_card"
+                android:textColor="@color/fff"
+                android:textSize="@dimen/sp_24"
+                android:textStyle="bold" />
+
+            <com.example.deepanshu.reportcard.TextView_Lato
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_28"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/school_name"
+                android:textColor="@color/fff"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <com.example.deepanshu.reportcard.Textview_lato_thin
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_28"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/student_name"
+                android:textColor="@color/fff"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </FrameLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/report_rcv"
