@@ -18,15 +18,15 @@ class ReportCard {
         this.subjectGrade = grade;
     }
 
-    public String getSubjectName() {
+    String getSubjectName() {
         return subjectName;
     }
 
-    public int getSubjectMarks() {
+    int getSubjectMarks() {
         return subjectMarks;
     }
 
-    public String getSubjectGrade() {
+    String getSubjectGrade() {
         return subjectGrade;
     }
 
@@ -35,6 +35,6 @@ class ReportCard {
     }
 
     public String toString() {
-        return "You Child got \n" + subjectGrade+ " Grade in "+ subjectName ;
+        return "You Child got " + subjectGrade+ "\n Grade in "+ subjectName ;
     }
 }

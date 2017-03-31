@@ -23,9 +23,39 @@ public class MainActivity extends AppCompatActivity {
         final List<ReportCard> mReportCardList = new ArrayList<>();
         mReportCardList.add(new ReportCard(
                 R.mipmap.ic_launcher,
-                "",
+                "Maths",
+                84,
+                "A"
+        ));
+        mReportCardList.add(new ReportCard(
+                R.mipmap.ic_launcher,
+                "Physics",
+                98,
+                "A+"
+        ));
+        mReportCardList.add(new ReportCard(
+                R.mipmap.ic_launcher,
+                "Chemistry",
+                75,
+                "B"
+        ));
+        mReportCardList.add(new ReportCard(
+                R.mipmap.ic_launcher,
+                "English",
+                88,
+                "B+"
+        ));
+        mReportCardList.add(new ReportCard(
+                R.mipmap.ic_launcher,
+                "Biology",
+                90,
+                "A"
+        ));
+        mReportCardList.add(new ReportCard(
+                R.mipmap.ic_launcher,
+                "Hindi",
                 3,
-                ""
+                "F"
         ));
 
         mRecyclerView.setAdapter(new ReportCardAdapter(mReportCardList));

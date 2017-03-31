@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/cardview_bg"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -47,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColor="@color/fff"
+            android:textColor="@color/colorLightGray"
             android:textSize="@dimen/sp_15"
             android:textStyle="bold" />
     </LinearLayout>
