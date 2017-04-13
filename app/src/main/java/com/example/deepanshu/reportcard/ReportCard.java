@@ -12,10 +12,10 @@ class ReportCard {
     private int subjectIcon;
 
     ReportCard(int icon, String name, int mark, String grade) {
-        this.subjectIcon = icon;
-        this.subjectName = name;
-        this.subjectMarks = mark;
-        this.subjectGrade = grade;
+        this.setSubjectIcon(icon);
+        this.setSubjectName(name);
+        this.setSubjectMarks(mark);
+        this.setSubjectGrade(grade);
     }
 
     String getSubjectName() {
@@ -34,7 +34,24 @@ class ReportCard {
         return subjectIcon;
     }
 
+    private void setSubjectName(String subjectName) {
+        this.subjectName = subjectName;
+    }
+
+    private void setSubjectMarks(int subjectMarks) {
+        this.subjectMarks = subjectMarks;
+    }
+
+    private void setSubjectGrade(String subjectGrade) {
+        this.subjectGrade = subjectGrade;
+    }
+
+    private void setSubjectIcon(int subjectIcon) {
+        this.subjectIcon = subjectIcon;
+    }
+
+    @Override
     public String toString() {
-        return "You Child got " + subjectGrade+ "\n Grade in "+ subjectName ;
+        return "You Child got " + subjectGrade + "\n Grade in " + subjectName;
     }
 }
